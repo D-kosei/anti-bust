@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
 
 type Row = {
@@ -34,7 +35,7 @@ export default function History() {
           </li>
         ))}
       </ul>
-      <a href="/">戻る</a>
+      <Link href="/">戻る</Link>
     </main>
   );
 }

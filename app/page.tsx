@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { LogoutButton } from './components/LogoutButton';
@@ -67,7 +68,7 @@ export default function Home() {
       </label>
 
       <button onClick={handleRoll}>占う→DBに記録</button>
-      <a href="/history">履歴を見る</a>
+      <Link href="/history">履歴を見る</Link>
       <LogoutButton />
     </main>
   );
